@@ -2,6 +2,7 @@ class Tiger(object):
     def __init__(self):
         print(self.__class__)
         print('this is tiger')
+
     def run(self):
         pass
 
