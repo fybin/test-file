@@ -45,4 +45,5 @@ class JSONMarshal(object):
 if __name__ == '__main__':
     marshal = JSONMarshal({'a':1, 'b':2})
     res = marshal.make_response()
-    print(res)
+
+    print(type(res.json))
