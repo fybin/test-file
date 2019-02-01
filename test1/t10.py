@@ -23,9 +23,8 @@ print(f.__name__)
 # with_logging
 
 
+
 from functools import wraps
-
-
 def logged(func):
     @wraps(func)
     def with_logging(*args, **kwargs):
@@ -34,12 +33,10 @@ def logged(func):
         return func(*args, **kwargs)
     return with_logging
 
-
 @logged
 def f(x):
    """does some math"""
    return x + x * x
-
 
 f(1)
 print(f.__name__)
